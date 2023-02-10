@@ -12,7 +12,7 @@ bool is_palindrome(string str)
     }
     else if (str.substr(0, 1) == str.substr(length - 1, 1))
     {
-        is_palindrome(str.substr(1, length - 2));
+        return is_palindrome(str.substr(1, length - 2));
     }
     else
     {
